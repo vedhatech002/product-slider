@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(128, 128, 128, 0.502);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background-color: #fff;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.card-left {
+    width: 50%;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.img-showcase {
+    width: 450px;
+    overflow: hidden;
+}
+
+.main-img {
+    display: flex;
+    height: fit-content;
+    transition: all 0.5s ease;
+
+}
+
+.main-img img {
+    width: 450px;
+}
+
+.img-select {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.active {
+    border: 2px solid rgba(0, 0, 0, 0.836);
+}
+
+.card-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card-right h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #535353;
+}
+
+.price .rate {
+    font-weight: 500;
+    color: black;
+}
+
+.mrp {
+    font-weight: 400;
+    color: #011c23b2;
+}
+
+.offer {
+    color: #f14314;
+}
+
+.price p {
+    color: #9f9f9f;
+}
+
+.star {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.star-group ion-icon {
+    color: #535353dc;
+
+}
+
+.star-group ion-icon:nth-child(1),
+.star-group ion-icon:nth-child(2),
+.star-group ion-icon:nth-child(3),
+.star-group ion-icon:nth-child(4) {
+    color: gold;
+}
+
+.product-color-div label {
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: .3em;
+    font-size: .8em;
+    color: #011c23;
+    margin-bottom: 10px;
+}
+
+.product-color-div label>span {
+
+    color: #03a685;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: .7em;
+    letter-spacing: .1em;
+
+}
+
+.color-card {
+    background-color: #03a685;
+    width: 50px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.color-card img {
+    border-radius: 5px;
+}
+
+.size {
+    display: flex;
+    flex-direction: column;
+}
+
+.size label {
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: .3em;
+    font-size: .8em;
+    color: #011c23;
+    margin-bottom: 10px;
+}
+
+.size label>span {
+    color: #03a685;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: .7em;
+    letter-spacing: .1em;
+}
+
+.size-input-container {
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.size-input {
+    border: 1.3px solid #bdbdbb;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.size-active {
+    border: 2px solid #535353c7;
+}
+
+.quantity {
+    display: flex;
+    gap: 0.2rem;
+    flex-direction: column;
+}
+
+.quantity label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: .3em;
+    font-size: .8em;
+    color: #011c23;
+}
+
+.qty-btn {
+
+    display: inline-flex;
+    width: 140px;
+    border: 1.3px solid #dbdbd2;
+    /* padding: 10px 10px; */
+}
+
+.qty-btn button {
+    width: 40px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-size: 25px;
+    padding: 6px 7px;
+    cursor: pointer;
+
+}
+
+.qty-btn button:hover {
+    background-color: #53535333;
+}
+
+.qty-btn input {
+    width: 60px;
+    border: none;
+    padding-left: 25px;
+    /* padding: 3px 7px; */
+    outline: none;
+
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.btn-group button {
+    width: 50%;
+    padding: 13px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 2px solid #011c23;
+    cursor: pointer;
+}
+
+.btn-group>.add-cart {
+    background-color: #011c23;
+    color: #fff;
+}
+
+.btn-group>.buy-now {
+    background-color: #fff;
+    color: #011c23;
+
+}
